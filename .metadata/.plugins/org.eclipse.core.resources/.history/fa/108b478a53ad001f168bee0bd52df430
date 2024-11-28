@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body bgcolor="cyan">
+<h2>Please Sign in</h2>
+<form action="">
+<pre>
+    <h2>
+    User Name
+    </h2>
+    <input type="text" name="uid" style="background-color:yellow;color:blue; font-size:18pt"/>
+       <h2>
+    Password
+    </h2>
+    <input type="password" name="pass" style="background-color:yellow;color:blue; font-size:18pt"/>
+    </pre>
+</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+package jdbcpack.dao;
+
+import java.util.Collection;
+
+import jdbcpack.bean.Restaurant;
+
+public class RestaurantDao implements DaoInterface<Restaurant, Integer> {
+
+	@Override
+	public Collection<Restaurant> retriveAll() {
+	
+		return null;
+	}
+
+}

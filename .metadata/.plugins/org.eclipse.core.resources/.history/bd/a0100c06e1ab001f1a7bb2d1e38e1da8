@@ -1,0 +1,5 @@
+package jdbcpack.dao;
+
+public class RestaurantDao {
+
+}

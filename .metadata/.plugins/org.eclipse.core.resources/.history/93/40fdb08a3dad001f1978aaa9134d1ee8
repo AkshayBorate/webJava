@@ -1,0 +1,45 @@
+package jdbcpack.dao;
+
+import java.util.Collection;
+
+import jdbcpack.bean.Restaurant;
+
+public class AssignPrac implements DaoInterface<Restaurant, Integer> {
+
+	@Override
+	public Collection<Restaurant> retriveAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Restaurant retriveOne(Integer key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void create(Restaurant t) {
+		String query = "insert into restaurant_master values(?,?,?,?)";
+		
+		try(){
+			
+		}catch(Exception ex) {
+			ex.printStackTrace();
+		}
+		
+	}
+
+	@Override
+	public void update(Restaurant t) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Integer key) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

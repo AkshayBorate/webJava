@@ -1,0 +1,5 @@
+package jdbcpack.dao;
+
+public interface DaoInterface<T,K> {
+// A method to retrive all records
+}

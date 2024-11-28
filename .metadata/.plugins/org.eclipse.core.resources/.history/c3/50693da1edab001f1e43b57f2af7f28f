@@ -1,0 +1,13 @@
+package jdbcpack.dao;
+
+import java.util.Collection;
+
+public interface DaoInterface<T,K> {
+  // Retrive all records
+	Collection<T> retriveAll();
+	
+	//Retrive one record based upon its identity
+	
+	
+	
+}

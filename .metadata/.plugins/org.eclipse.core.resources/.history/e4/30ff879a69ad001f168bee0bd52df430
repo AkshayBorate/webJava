@@ -1,0 +1,13 @@
+package example.bean;
+
+public class UserValidator {
+	
+	public static boolean isValid(User userObject) {
+		boolean result = false;
+		String currentUserId = userObject.getUsername();
+		String currentPass = userObject.getPass();
+		return result;
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+
+<body bgcolor="yellow">
+<h2>Search Restaurent</h2>
+<form action="search" method="post">
+</form>
+</body>
+</html>

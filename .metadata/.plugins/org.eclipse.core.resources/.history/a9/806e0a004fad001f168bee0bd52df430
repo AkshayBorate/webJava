@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1 style="color:white;background-color: blue">
+  To make a request to greeting servlet click here</h1>
+</body>
+</html>

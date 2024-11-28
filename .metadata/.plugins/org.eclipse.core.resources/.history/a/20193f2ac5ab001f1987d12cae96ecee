@@ -1,0 +1,25 @@
+package jdbcpack;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class simpleSelectQuery {
+
+	public static void main(String[] args) {
+		// Load the Driver
+		
+		String driverClassName  = "com.mysql.cj.jdbc.Driver";
+		String url = "jdbc:mysql://localhost:3306/zomato";
+		String uid = "root";
+		String pass = "password";
+		try {
+			Class.forName(driverClassName);
+			System.out.println("Driver Loaded");
+			Connection dbConnection = DriverManager.getConnection(url,uid.pass)
+		} catch (ClassNotFoundException e) {
+			System.out.println("Unbale to load the driver");
+		}
+
+	}
+
+}

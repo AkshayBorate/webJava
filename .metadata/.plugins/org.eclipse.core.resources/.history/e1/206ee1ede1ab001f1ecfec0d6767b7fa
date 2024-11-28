@@ -1,0 +1,7 @@
+package jdbcpack.dao;
+
+import jdbcpack.bean.Restaurant;
+
+public class RestaurantDao implements DaoInterface<Restaurant, Integer> {
+
+}

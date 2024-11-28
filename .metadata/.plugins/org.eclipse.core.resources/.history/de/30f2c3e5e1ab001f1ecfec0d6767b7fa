@@ -1,0 +1,7 @@
+package jdbcpack.dao;
+
+public interface DaoInterface<T,K> {
+
+	
+	Collection<T> retriveAll();
+}

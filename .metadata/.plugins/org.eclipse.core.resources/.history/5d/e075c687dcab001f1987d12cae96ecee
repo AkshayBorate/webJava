@@ -1,0 +1,5 @@
+package jdbcpack;
+
+public class JdbcUtils {
+
+}

@@ -1,0 +1,12 @@
+package example.bean;
+
+public class UserValidator {
+	
+	public static boolean isValid(User userObject) {
+		boolean result = false;
+		
+		return result;
+		
+	}
+
+}

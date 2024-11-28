@@ -1,0 +1,9 @@
+package jdbcpack.dao;
+
+import java.util.Collection;
+
+public interface DaoInterface<T,K> {
+
+	
+	Collection<T> retriveAll();
+}

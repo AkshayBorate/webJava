@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="jdbcpack.bean.Restaurant"/>
+    <fullyQualifiedTypeName name="jdbcpack.dao.RestaurantDao"/>
+    <fullyQualifiedTypeName name="jdbcpack.dao.DaoInterface"/>
+    <fullyQualifiedTypeName name="jdbcpack.utils.JdbcUtils"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,86 @@
+package jdbcpack.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Collection;
+
+import jdbcpack.bean.Restaurant;
+import jdbcpack.utils.JdbcUtils;
+
+public class RestaurantDao implements DaoInterface<Restaurant, Integer> {
+
+	@Override
+	public Collection<Restaurant> retriveAll() {
+
+//	  This method connects to DB fetches all records converts them 
+//	  into java objects of restaurent class , puts those objects into 
+//	  same collection and return the collection
+
+		Collection<Restaurant> allRestaurant = new ArrayList<Restaurant>();
+		String sqlQuery = "select * from restaurant_master";
+
+		try (Connection conn = JdbcUtils.getConnection();
+				Statement stmt = conn.createStatement();
+				ResultSet rs = stmt.executeQuery(sqlQuery);) {
+			while (rs.next()) {
+				int resaurantid = rs.getInt(1);
+				String resaurantname = rs.getString(2);
+				int branchcount = rs.getInt(4);
+				String restcuise = rs.getString(3);
+
+				Restaurant rst = new Restaurant(resaurantid, resaurantname, restcuise, branchcount);
+				allRestaurant.add(rst);
+			}
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		return allRestaurant;
+	}
+
+	@Override
+	public Restaurant retriveOne(Integer key) {
+		Restaurant foundRestaurent = null;
+		String sqlQuery = "Select * from restaurant_master where rest_id = ?";
+
+		try (Connection conn = JdbcUtils.getConnection(); PreparedStatement pstmt = conn.prepareStatement(sqlQuery)) {
+			pstmt.setInt(1, key);
+			ResultSet rs = pstmt.executeQuery();
+
+			if (rs.next()) {
+				int resaurantid = rs.getInt(1);
+				String resaurantname = rs.getString(2);
+				int branchcount = rs.getInt(4);
+				String restcuise = rs.getString(3);
+				foundRestaurent = new Restaurant(resaurantid, resaurantname, restcuise, branchcount);
+
+			}
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		return foundRestaurent;
+
+	}
+
+	@Override
+	public void create(Restaurant newRestaurent) {
+		/*
+		 * this method accept a restaurent object : new restaurent and strore it as a
+		 * record in the Db table
+		 */
+
+		String query = "insert into restuarant_master values(?,?,?,?)";
+		try (Connection conn = JdbcUtils.getConnection(); PreparedStatement pstmt = conn.prepareStatement(query)) {
+			//Extracting values from restaurent object : new Restarant 
+			//Using getter method
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+
+	}
+
+}

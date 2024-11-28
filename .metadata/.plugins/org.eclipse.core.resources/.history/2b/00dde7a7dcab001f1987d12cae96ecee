@@ -1,0 +1,6 @@
+package jdbcpack;
+
+public class JdbcUtils {
+	//this is a utitlity class for obtaining the connction and returning hte same
+
+}

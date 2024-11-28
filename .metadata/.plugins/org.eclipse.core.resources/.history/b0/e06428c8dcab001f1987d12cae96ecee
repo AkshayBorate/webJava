@@ -1,0 +1,12 @@
+package jdbcpack;
+
+import java.sql.Connection;
+
+public class JdbcUtils {
+	//this is a utitlity class for obtaining the connction and returning hte same
+	
+	public static Connection getConnection() throws Exception{
+		
+	}
+
+}

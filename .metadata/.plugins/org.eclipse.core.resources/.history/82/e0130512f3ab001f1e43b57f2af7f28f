@@ -1,0 +1,19 @@
+package jdbcpack;
+
+import jdbcpack.bean.Restaurant;
+import jdbcpack.dao.DaoInterface;
+import jdbcpack.dao.RestaurantDao;
+
+public class RetriveOneUsingDao {
+
+	public static void main(String[] args) {
+		DaoInterface<Restaurant, Integer> oneRef = new RestaurantDao();
+		Restaurant restobj = oneRef.retriveOne(104);
+		if(restobj !=null) {
+			System.out.println(restobj);
+		}else {
+			System.out.println("Given Id is not exits");
+		}
+	}
+
+}

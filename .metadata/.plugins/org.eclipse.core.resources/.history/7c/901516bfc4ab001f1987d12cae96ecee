@@ -1,0 +1,19 @@
+package jdbcpack;
+
+public class simpleSelectQuery {
+
+	public static void main(String[] args) {
+		// Load the Driver
+		
+		String driverClassName  = "com.mysql.cj.jdbc.Driver";
+		String url = "jdbc:mysql://localhost:3306";
+		try {
+			Class.forName(driverClassName);
+			System.out.println("Driver Loaded");
+		} catch (ClassNotFoundException e) {
+			System.out.println("Unbale to load the driver");
+		}
+
+	}
+
+}

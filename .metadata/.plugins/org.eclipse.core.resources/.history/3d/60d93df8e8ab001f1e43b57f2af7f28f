@@ -1,0 +1,14 @@
+package jdbcpack;
+
+import jdbcpack.bean.Restaurant;
+import jdbcpack.dao.DaoInterface;
+import jdbcpack.dao.RestaurantDao;
+
+public class RetriveAllUsingDao {
+
+	public static void main(String[] args) {
+	  DaoInterface<Restaurant, Integer> daoRef = new RestaurantDao();
+
+	}
+
+}
