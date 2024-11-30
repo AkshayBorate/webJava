@@ -6,4 +6,25 @@
     <fullyQualifiedTypeName name="jdbcpack.dao.DaoInterface"/>
     <fullyQualifiedTypeName name="jdbcpack.utils.JdbcUtils"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="example.bean.UserValidator"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="example.dao.DaoInterface"/>
+    <fullyQualifiedTypeName name="example.dao.RestaurantDao"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="example.bean.Restaurant"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="example.hibernate.main.RecoedInsertionExample"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.SessionFactory"/>
+    <fullyQualifiedTypeName name="example.hibernate.utils.HibernateUtils"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="java.lang.module.Configuration"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+    <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+    <fullyQualifiedTypeName name="example.hibernate.utils.HibernateUtilities"/>
+    <fullyQualifiedTypeName name="jakarta.transaction.Transaction"/>
+    <fullyQualifiedTypeName name="example.hibernate.entity.Actor"/>
+    <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
 </qualifiedTypeNameHistroy>

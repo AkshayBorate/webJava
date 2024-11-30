@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="example.hibernate.entity.Movie" table="Movie_Master">
+		<id name="movieId" type="string" column="movie_id"/>
+			<property name="title" column="movie_title" type="string" />
+			<property name="genre" column="movie_genre" type="string" />
+			<property name="year" column="movie_year" type="int" />
+	</class>
+</hibernate-mapping>

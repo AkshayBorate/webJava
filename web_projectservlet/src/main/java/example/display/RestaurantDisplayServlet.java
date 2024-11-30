@@ -44,6 +44,7 @@ public class RestaurantDisplayServlet extends HttpServlet {
 		 String name= currentRest.getName();
          String cuisine = currentRest.getCuisine();
          int bracnchcount = currentRest.getBranchocunt();
+         
          out.println("<h1>Restaurent Details</h1>");
          out.println("<h2>Name:"+name+"</h2>");
          out.println("<h2>cuisine:"+cuisine+"</h2>");
